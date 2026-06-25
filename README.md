@@ -51,13 +51,13 @@ A deep learning-based Brain Tumor Detection system built using **TensorFlow/Kera
 ---
 
 ## ▶ Running on Google Colab
-Open Google Colab
-Upload app.ipynb
-Upload dataset folders (yes, no)
-Upload augmentated data
-Upload static, templates, testing
-Upload the model to skip training
-Run notebook cells sequentially
+*Open Google Colab
+*Upload app.ipynb
+*Upload dataset folders (yes, no)
+*Upload augmentated data
+*Upload static, templates, testing
+*Upload the model to skip training
+*Run notebook cells sequentially
 
 Install required packages:
 
