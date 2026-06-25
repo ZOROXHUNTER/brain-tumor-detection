@@ -36,14 +36,14 @@ A deep learning-based Brain Tumor Detection system built using **TensorFlow/Kera
 
 ```text
 .
-├── app.ipynb                    # Main notebook
-├── Data Augmentation.ipynb      # Data augmentation notebook
-├── model.h5                     # Trained model
-├── templates/                   # HTML templates
-├── static/                      # CSS and images
-├── yes/                         # Tumor MRI images
-├── no/                          # Non-tumor MRI images
-├── augmented_data/              # Augmented dataset
+├── app.ipynb                                                   # Main notebook
+├── Data Augmentation.ipynb                                     # Data augmentation notebook
+├── cnn-parameters-improvement-23-0.91.model                    # Trained model
+├── templates/                                                  # HTML templates
+├── static/                                                     # CSS and images
+├── yes/                                                        # Tumor MRI images
+├── no/                                                         # Non-tumor MRI images
+├── augmented_data/                                             # Augmented dataset
 ├── requirements.txt
 └── README.md
 ```
