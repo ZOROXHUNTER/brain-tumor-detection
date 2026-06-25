@@ -50,7 +50,7 @@ A deep learning-based Brain Tumor Detection system built using **TensorFlow/Kera
 
 ---
 
-▶ Running on Google Colab
+## ▶ Running on Google Colab
 Open Google Colab
 Upload app.ipynb
 Upload dataset folders (yes, no)
