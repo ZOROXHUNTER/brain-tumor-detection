@@ -5,7 +5,7 @@
 ![Flask](https://img.shields.io/badge/Flask-Web%20App-black)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
 
-A deep learning-based Brain Tumor Detection system built using **TensorFlow/Keras**, **OpenCV**, and **Flask**. The project preprocesses MRI images, applies image augmentation techniques, and predicts whether a brain scan contains a tumor.
+A deep learning-based Brain Tumor Detection system built using **TensorFlow/Keras**, **OpenCV**, and **Flask**. This project preprocesses MRI images, applies image augmentation techniques, and predicts whether a brain MRI scan contains a tumor.
 
 ---
 
@@ -13,8 +13,8 @@ A deep learning-based Brain Tumor Detection system built using **TensorFlow/Kera
 
 ✅ Brain MRI image classification
 ✅ Image preprocessing and contour extraction
-✅ Data augmentation for improving model performance
-✅ TensorFlow/Keras-based neural network model
+✅ Data augmentation for improved model performance
+✅ TensorFlow/Keras-based CNN model
 ✅ Flask web interface for prediction
 ✅ Upload and analyze MRI scans
 
@@ -40,40 +40,53 @@ A deep learning-based Brain Tumor Detection system built using **TensorFlow/Kera
 ├── Data Augmentation.ipynb      # Data augmentation notebook
 ├── model.h5                     # Trained model
 ├── templates/                   # HTML templates
-├── static/                      # CSS/images
-├── yes/                         # Tumor images
-├── no/                          # Non-tumor images
-├── augmented_data/              # Generated dataset
+├── static/                      # CSS and images
+├── yes/                         # Tumor MRI images
+├── no/                          # Non-tumor MRI images
+├── augmented_data/              # Augmented dataset
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## ▶ Running on Google Colab
-*Open Google Colab
-*Upload app.ipynb
-*Upload dataset folders (yes, no)
-*Upload augmentated data
-*Upload static, templates, testing
-*Upload the model to skip training
-*Run notebook cells sequentially
+## 🚀 Installation & Setup
 
-Install required packages:
+### Clone the repository
 
-!pip install -r requirements.txt
+```bash
+git clone <repository-url>
+cd Brain-Tumor-Detection
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
 
 Or install manually:
 
-!pip install tensorflow opencv-python numpy matplotlib scikit-learn imutils pillow
-
-Open your browser:
-
-```text
-http://localhost:5000
+```bash
+pip install tensorflow opencv-python numpy matplotlib scikit-learn imutils pillow flask
 ```
 
-Upload an MRI image and receive prediction results.
+---
+
+## ▶ Running on Google Colab
+
+1. Open Google Colab
+
+2. Upload:
+
+   * `app.ipynb`
+   * Dataset folder (`augmented_data/`)  OR Upload `Data Augmentation.ipynb` and Dataset folders (`yes/`,`no/`)
+   * `templates/`
+   * `static/`
+   * `testing`
+   * `cnn-parameters-improvement-23-0.91.model` (optional if you want to skip training)
+
+3. Run notebook cells sequentially
 
 ---
 
@@ -97,7 +110,7 @@ Tumor Prediction
 
 ## 📊 Data Augmentation
 
-Data augmentation techniques used:
+The following augmentation techniques are used:
 
 * Rotation
 * Zoom
@@ -105,13 +118,13 @@ Data augmentation techniques used:
 * Width/height shift
 * Shear transformation
 
-These techniques increase dataset diversity and improve model performance.
+These techniques increase dataset diversity and improve model generalization.
 
 ---
 
 ## 📜 License
 
-This project is open-source and available for educational purposes.
+This project is open-source and intended for educational purposes.
 
 ---
 
@@ -119,4 +132,4 @@ This project is open-source and available for educational purposes.
 
 **ZOROXHUNTER**
 
-If you found this useful, give the repository a ⭐
+If you found this project useful, consider giving the repository a ⭐
